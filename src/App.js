@@ -11,8 +11,8 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="" element={<Mainpage/>} exact />
-        <Route path="/game" element={<Gameboard />} exact />
+        <Route path="/Earth_Defender/" element={<Mainpage/>} exact />
+        <Route path="/Earth_Defender/game" element={<Gameboard />} exact />
       </Routes>
     </div>
   );
