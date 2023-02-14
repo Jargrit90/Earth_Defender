@@ -1,0 +1,8 @@
+.gameboard {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    font-family: 'Dosis', sans-serif;
+    cursor: none;
+}

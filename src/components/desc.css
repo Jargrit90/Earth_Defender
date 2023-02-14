@@ -1,0 +1,26 @@
+.opis, .osiagniecia {
+    position: absolute;
+    top: 0;
+    width :100%;
+    min-height: 100vh;
+    background-color: black;
+    z-index: 2;
+    text-align: center;
+    background: url(./images/earth_defender_main_background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-shadow: -2px -2px 4px rgb(0, 0, 0);
+}
+.opis {
+    font-size: 24px;
+}
+
+.close {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}

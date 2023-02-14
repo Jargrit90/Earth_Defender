@@ -1,0 +1,87 @@
+:root {
+    --enemy_left: 0;
+    --enemy_top: 0;
+    --enemy_left_1: 0;
+    --enemy_top_1: 0;
+    --enemy_left_2: 0;
+    --enemy_top_2: 0;
+
+    --enemy_bullet_top: 0;
+    --enemy_bullet_left: 0;
+}
+.enemy_container {
+    position: fixed;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+.enemy {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    animation: enemyMove 4s infinite linear;
+}
+.enemy_layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.e_layer_1 {
+    clip-path: polygon(50% 1%, 35% 10%, 2% 80%, 2% 95%, 35% 65%, 50% 85%, 65% 65%, 98% 95%, 98% 80%, 65% 10%);
+    background-color:crimson;
+}
+.e_layer_2 {
+    clip-path: polygon(50% 80%, 38% 65%, 50% 55%, 62% 65%);
+    background-color: black;
+}
+.enemy_hp {
+    width: 100%;
+    height: 20px;
+    font-size: 20px;
+    color: red;
+    text-align: center;
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+
+@keyframes enemyMove {
+    0% {
+        left: var(--enemy_left);
+        top: var(--enemy_top);
+    }
+    33% {
+        left: var(--enemy_left_1);
+        top: var(--enemy_top_1);
+    }
+    66% {
+        left: var(--enemy_left_2);
+        top: var(--enemy_top_2);
+    }
+    100% {
+        left: var(--enemy_left);
+        top: var(--enemy_top);
+    }
+}
+
+.enemy_bullet {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: red;
+    position: fixed;
+    
+}
+.enemy_bullet_animation {
+    animation: enemy_bullet_move 2s forwards;
+}
+@keyframes enemy_bullet_move {
+    0% {
+        left: var(--enemy_bullet_left);
+        top: var(--enemy_bullet_top);
+    }
+    100% {
+        left: var(--enemy_bullet_left);
+        top: 110vh;
+    }
+}

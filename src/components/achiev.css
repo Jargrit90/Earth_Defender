@@ -1,0 +1,44 @@
+.main_title {
+    font-size: 32px;
+    text-shadow: -2px -2px 4px black;
+}
+.subtitle {
+    font-size: 24px;
+    text-shadow: -2px -2px 4px black;
+}
+.osiągniecia {
+    overflow-y: auto;
+}
+.achievements_container {
+    width: 100%;
+}
+.achievement {
+    width: 200px;
+    height: 200px;
+    text-shadow: -2px -2px 4px black;
+    margin: 10px;
+    border: solid 2px white;
+    border-radius: 10px 10px 10px 10px;
+    user-select: none;
+}
+
+.achievement_image {
+    width: 100%;
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+.achievement_text {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+}
+.achievement_locked {
+    filter: grayscale(100%);
+    opacity: 0.7;
+}

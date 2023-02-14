@@ -1,0 +1,151 @@
+:root {
+	--wall: 100px;
+}
+.boss_box {
+	
+	width: 200px;
+	height: 200px;
+	border: solid 2px red;
+	position: fixed;
+	transform-origin: 50% 50%;
+	transform: rotateZ(45deg);
+	left: calc(50% - 100px);
+	animation: bossMove 10s infinite linear;
+	background: linear-gradient(to top, rgba(255,0,0,1) 0%, rgba(255,0,0,0) 50%), linear-gradient(to left, rgba(255,0,0,1) 0%, rgba(255,0,0,0) 50%);
+}
+.boss_eye {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 2px solid white;
+	position: absolute;
+}
+.line_box {
+	transform-origin: 50% 50%;
+	animation: 6s rotateLines infinite linear;
+}
+@keyframes rotateLines {
+	0% {
+		transform: rotateZ(0deg);
+	}
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
+.line {
+	position: absolute;
+	left: calc(50%);
+	width: 1000px;
+	height: 10px;
+	transform-origin: 0% 50%;
+	transform: rotateZ(45deg);
+	justify-content: space-between;
+	animation: lineAnimation 4s infinite linear;
+}
+@keyframes bossMove {
+	0% {
+		left: calc(50% - 100px);
+		top: 0px;
+	}
+	25% {
+		left: calc(50% - 300px);
+		top: 50px;
+	}
+	50% {
+		left: calc(50% - 100px);
+		top: 0px;
+	}
+	75% {
+		left: calc(50% + 200px);
+		top: 50px;
+	}
+	100% {
+		left: calc(50% - 100px);
+		top: 0px;
+	}
+}
+@keyframes lineAnimation {
+	0% {
+		width: 1000px;
+	}
+	25% {
+		width: 1200px;
+	}
+	50% {
+		width: 1000px;
+	}
+	75% {
+		width: 800px;
+	}
+	100% {
+		width: 1000px;
+	}
+}
+.line_1 {
+	transform: rotateZ(0deg);
+}
+.line_2 {
+	transform: rotateZ(90deg);
+}
+.line_3 {
+	transform: rotateZ(180deg);
+}
+.line_4 {
+	transform: rotateZ(270deg);
+}
+.circle {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: yellow;
+}
+.damage_wall {
+	border-bottom: 4px solid rgb(71, 231, 252);
+	background-color: rgba(71, 231, 252, 0.4);
+	height: 0px;
+	position: fixed;
+	animation: wallAnimation 5s infinite linear;
+}
+.left_wall {
+	width: var(--wall);
+	left: 0;
+}
+.right_wall {
+	width: var(--wall);
+	right: 0;
+}
+@keyframes wallAnimation {
+	0% {
+		width: var(--wall);
+		height: 0px;
+	}
+	25% {
+		width: var(--wall);
+		height: 100vh;
+	}
+	50% {
+		width: var(--wall);
+		height: 100vh;
+	}
+	51% {
+		width: var(--wall);
+		height: 0px;
+	}
+	100% {
+		width: var(--wall);
+		height: 0px;
+	}
+}
+
+.boss_hp {
+	position: absolute;
+	color: red;
+	height: 50px;
+	transform-origin: 50% 50%;
+	transform: rotateZ(-45deg);
+	background-color: black;
+	width: 50px;
+	border-radius: 50%;
+	font-size: 20px;
+	font-weight: bold;
+}

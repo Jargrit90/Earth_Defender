@@ -1,0 +1,142 @@
+:root {
+    --bullet_left: 0;
+    --bullet_top: 0;
+    --bullet_left_end: 0;
+    --bullet_right_end: 0;
+    --rocket_left_start: 0;
+    --rocket_top_start: 0;
+    --rocket_left_end: 0;
+    --rocket_top_end: 0;
+    --explosion_size: 0;
+    --razor_size: 0;
+    --razors: 0; 
+    --top: 0;
+    --left: 0;
+}
+.bullet {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: white;
+    position: fixed;
+}
+.bullet_center {
+    animation: bulletMove 2s forwards;
+}
+.bullet_3_left, .bullet_5_left {
+    animation: bullet3MoveLeft 2s forwards;
+}
+.bullet_3_right, .bullet_5_right {
+    animation: bullet3MoveRight 2s forwards;
+}
+
+
+
+@keyframes bulletMove {
+    0% {
+        left: var(--bullet_left);
+        top: var(--bullet_top);
+    }
+    100% {
+        left: var(--bullet_left);
+        top: -10vh;
+    }
+}
+
+
+@keyframes bullet3MoveLeft {
+    0% {
+        left: var(--bullet_left);
+        top: var(--bullet_top);
+    }
+    100% {
+        left: var(--bullet_left_end);
+        top: -10vh;
+    }
+}
+@keyframes bullet3MoveRight {
+    0% {
+        left: var(--bullet_left);
+        top: var(--bullet_top);
+    }
+    100% {
+        left: var(--bullet_right_end);
+        top: -10vh;
+    }
+}
+
+
+.rocket {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    color: red;
+    font-size: 24px;
+}
+.explosion {
+    position: absolute;
+    
+}
+.explosionAnimation {
+    animation: explosion 5s infinite;
+}
+@keyframes explosion {
+    0% {
+        width: 0px;
+        height: 0px;
+        background-color: red;
+        border-radius: 50%;
+    }
+    40% {
+        width: 0px;
+        height: 0px;
+        background-color: red;
+        border-radius: 50%;
+    }
+    100% {
+        width: var(--explosion_size);
+        height: var(--explosion_size);
+        background-color: red;
+        border-radius: 50%;
+    }
+}
+.razor_box {
+    width: var(--razor_size);
+    height: var(--razor_size);
+    position: fixed;
+    transform-origin: 50% 50%;
+    animation: razorRotate 4s infinite linear;
+}
+
+.razor_edge {
+    width: 100%;
+    height: 4px;
+    background-color: yellowgreen;
+    position: absolute;
+}
+.edge_1, .edge_2 {
+    border-radius: 50% 0% 50% 0%;
+}
+.edge_2 {
+    transform-origin: 50% 50%;
+    transform: rotateZ(90deg);
+}
+
+
+@keyframes razorRotate {
+    0% {
+        transform: rotateZ(0deg);
+        top: var(--top);
+        left: var(--left_start);
+    }
+    50% {
+        transform: rotateZ(180deg);
+        top: var(--top);
+        left: var(--left_end);
+    }
+    100% {
+        transform: rotateZ(360deg);
+        top: var(--top);
+        left: var(--left_start);
+    }
+}

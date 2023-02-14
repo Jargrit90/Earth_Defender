@@ -1,0 +1,65 @@
+
+
+export const game_stats = {
+    active_button: true,
+    kill_count: 0,
+    max_kill_count: 0,
+    max_time: 0,
+    max_hp_to_save: 100,
+    max_hp_in_game: 100,
+    healing: false,
+    level: 1,
+    exp: 0,
+    exp_breakpoint: 100,
+    skill_points: 0,
+    percent_bar: 0,
+    basic_hp: 100,
+    basic_damage: 10,
+    basic_attack_speed: 1,
+    actual_hp: 100,
+    actual_damage: 10,
+    actual_attack_speed: 1,
+    skillTree: false,
+    skill_tree_main_level: 0,
+    active_skill_tree: 'BasicStatsInfo',
+    basic_damage_level: 0,
+    basic_hp_level: 0,
+    basic_speed_level: 0,
+
+    gun_damage_level: 0,
+    gun_basic_damage: 10,
+    gun_actual_damage: 10,
+
+    gun_three_shoot: false,
+    gun_five_shoot: false,
+
+    laser_damage_level: 0,
+    laser_width_level: 0,
+    laser_basic_damage: 2,
+    laser_actual_damage: 2,
+    laser_basic_width: 2,
+    laser_actual_width: 2,
+
+    rocket_damage_level: 0,
+    rocket_width_level: 0,
+    rocket_basic_damage: 50,
+    rocket_actual_damage: 50,
+    rocket_basic_width: 200,
+    rocket_actual_width: 200,
+
+    razor_damage_level: 0,
+    razor_width_level: 0,
+    razor_basic_damage: 15,
+    razor_actual_damage: 15,
+    razor_basic_width: 24,
+    razor_actual_width: 24,
+
+    razor_second: false,
+
+    enemy_hp: 20,
+    enemy_damage: 5,
+    enemies_active: true,
+    boss_active: false,
+    boss_hp: 1000,
+    boss_damage: 20
+}
