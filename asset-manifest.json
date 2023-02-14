@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Jargrit90/Earth_Defender/static/css/main.6b11a52a.css",
+    "main.js": "/Jargrit90/Earth_Defender/static/js/main.a46387e8.js",
+    "static/js/787.31669f78.chunk.js": "/Jargrit90/Earth_Defender/static/js/787.31669f78.chunk.js",
+    "static/media/earth_defender_main_background.jpg": "/Jargrit90/Earth_Defender/static/media/earth_defender_main_background.8f347b9acfc8dd4f2455.jpg",
+    "index.html": "/Jargrit90/Earth_Defender/index.html",
+    "main.6b11a52a.css.map": "/Jargrit90/Earth_Defender/static/css/main.6b11a52a.css.map",
+    "main.a46387e8.js.map": "/Jargrit90/Earth_Defender/static/js/main.a46387e8.js.map",
+    "787.31669f78.chunk.js.map": "/Jargrit90/Earth_Defender/static/js/787.31669f78.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6b11a52a.css",
+    "static/js/main.a46387e8.js"
+  ]
+}
