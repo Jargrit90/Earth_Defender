@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/Earth_Defender/" element={<Mainpage/>} exact />
-        <Route path="/Earth_Defender/game" element={<Gameboard />} exact />
+        <Route path="/Earth_Defender/game" element={<Gameboard />} />
       </Routes>
     </div>
   );
