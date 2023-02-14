@@ -19,7 +19,7 @@ function Mainpage(){
                     <div className="subtitle flexCC">Obroń ziemię przed armią kosmitów</div>
                 </div>
                 <div className="buttons_container">
-                    <div className="mainpage_button"><Link to='/game'><span>Start</span></Link></div>
+                    <div className="mainpage_button"><Link to='/Earth_Defender/game'><span>Start</span></Link></div>
                     <div className="mainpage_button" onClick={()=>dispatch({type: 'toggleInfo', payload: 'opis'})}><span>Opis gry</span></div>
                     <div className="mainpage_button" onClick={()=>dispatch({type: 'toggleInfo', payload: 'osiagniecia'})}><span>Osiągnięcia</span></div>
                 </div>
