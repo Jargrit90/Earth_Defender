@@ -112,7 +112,7 @@ function Enemy(){
                                 }
                             }
                         
-                            window.location.href = "/";
+                            window.location.href = "https://jargrit90.github.io/Earth_Defender/";
                         }
                     }
                 }

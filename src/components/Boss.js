@@ -50,6 +50,7 @@ function Boss(){
                     let y = Math.abs(y2 - y1);
                     if(Math.sqrt(x*x + y*y) <= spaceship[0].offsetWidth/2){
                         actual_hp[0].innerText = actual_hp[0].innerText - game_stats.boss_damage;
+                        dispatch({type: 'actual_hp', payload: actual_hp[0].innerText});
                         if(actual_hp[0].innerText <= 0){
                         alert("Zostałeś pokonany");
                             clear_intervals();
@@ -71,7 +72,7 @@ function Boss(){
                                 }
                             }
                         
-                            window.location.href = "/";
+                            window.location.href = "https://jargrit90.github.io/Earth_Defender/";
                         }
                     }
                 }
@@ -102,6 +103,7 @@ function Boss(){
                     let wall_bottom = wall_data.bottom;
                     if((ss_left >= wall_left && ss_left <= wall_right && ss_top <= wall_bottom) || (ss_right >= wall_left && ss_right <= wall_right && ss_top <= wall_bottom)){
                         actual_hp[0].innerText = actual_hp[0].innerText - (game_stats.boss_damage/5);
+                        dispatch({type: 'actual_hp', payload: actual_hp[0].innerText});
                         if(actual_hp[0].innerText <= 0){
                         alert("Zostałeś pokonany");
                             clear_intervals();
@@ -123,7 +125,7 @@ function Boss(){
                                 }
                             }
                         
-                            window.location.href = "/";
+                            window.location.href = "https://jargrit90.github.io/Earth_Defender/";
                         }
                     }
                 }

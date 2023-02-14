@@ -45,10 +45,10 @@ function gameReducer(state = game_stats, action){
                     level: parseInt(state.level) + 1,
                     exp_breakpoint: parseInt(state.exp_breakpoint) + 50,
                     skill_points: parseInt(state.skill_points) + 5,
-                    enemy_hp: parseInt(state.enemy_hp) + 10,
-                    enemy_damage: parseInt(state.enemy_damage) + 5,
-                    boss_hp: parseInt(state.boss_hp) + 100,
-                    boss_damage: parseInt(state.boss_damage) + 10,
+                    enemy_hp: parseInt(state.enemy_hp) + 20,
+                    enemy_damage: parseInt(state.enemy_damage) + 10,
+                    boss_hp: parseInt(state.boss_hp) + 400,
+                    boss_damage: parseInt(state.boss_damage) + 20,
                 }
             }
             else {
